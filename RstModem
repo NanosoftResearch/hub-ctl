@@ -1,0 +1,11 @@
+clear
+echo "Turning OFF the USB power."
+sudo ./hub-ctrl -h 0 -P 2 -p 0
+echo -n "Delaying 10 Sec" 
+sleep 1 && echo -n .&& sleep 1 && echo -n . && sleep 1 && echo -n . && sleep 1 && echo -n .&& sleep 1 && echo -n .
+sleep 1 && echo -n .&& sleep 1 && echo -n . && sleep 1 && echo -n . && sleep 1 && echo -n .&& sleep 1 && echo .
+sudo ./hub-ctrl -h 0 -P 2 -p 1
+echo "The USB power has resumed"
+
+
+
